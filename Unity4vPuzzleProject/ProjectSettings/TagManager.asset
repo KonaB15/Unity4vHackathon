@@ -6,6 +6,7 @@ TagManager:
   tags:
   - wall
   - prize
+  - Floor
   layers:
   - Default
   - TransparentFX
