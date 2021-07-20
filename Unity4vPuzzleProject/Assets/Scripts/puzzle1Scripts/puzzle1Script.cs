@@ -68,7 +68,7 @@ public class puzzle1Script : MonoBehaviour
 
         if (collision.gameObject.CompareTag("prize"))
         {
-            winScreen.text = "YOU PASSED! first digit: " + manageScript.digits[0];
+            winScreen.text = "Very good for a first run.";
         }
     }
 

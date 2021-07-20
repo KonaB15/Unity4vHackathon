@@ -18,8 +18,16 @@ public class puzzle2Script : MonoBehaviour
     void Update()
     {
         if (input.text == "You got it" || input.text == "you got it" || input.text == "YOU GOT IT" || input.text == "You Got It")
+
         {
-            winScreen.text = "YOU PASSED! first digit: " + manageScript.digits[0];
+            winScreen.color = Color.green;
+            winScreen.text = "Very good. You're a smart one.";
         }
+        else if (input.text != null && input.text != "")
+        {
+            winScreen.color = Color.red;
+            winScreen.text = "Wrong";
+        }
+       
     }
 }
