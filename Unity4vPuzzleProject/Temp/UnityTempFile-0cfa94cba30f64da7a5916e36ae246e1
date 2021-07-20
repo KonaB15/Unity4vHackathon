@@ -319,5 +319,6 @@
 "Assets/Scripts/PlayerScripts/MouseLook.cs"
 "Assets/Scripts/PlayerScripts/PlayerMovement.cs"
 "Assets/Scripts/PlayerScripts/PlayerTracker.cs"
+"Assets/Scripts/PlayerScripts/pickUpScript.cs"
 "Assets/Scripts/puzzle1Scripts/puzzle1Script.cs"
 "Assets/Scripts/puzzle2SCRIPT/puzzle2Script.cs"

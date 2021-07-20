@@ -8,6 +8,7 @@ TagManager:
   - prize
   - Floor
   - 'Collideable '
+  - Room
   layers:
   - Default
   - TransparentFX
