@@ -15,17 +15,23 @@ public class pickUpScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         RaycastHit hit;
+        Ray newRay = new Ray(transform.position, Vector3.down);
 
         //hold 'f' to pick up object in crosshair
        
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (Physics.Raycast(transform.position, transform.forward, out hit, range))
+            if (Physics.Raycast(newRay, out hit, range))
             {
-                //what happens to object that is picked up/selected
-                
-                
+                if (hit.transform.gameObject != null)
+                {
+                    Debug.Log(hit.collider.tag);
+                }
+
+            
+            
                
             }
         }
