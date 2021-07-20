@@ -20,7 +20,7 @@ public class PlayerTracker : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {	
          //Checks which room is being collided with and saves the name
-	if (other.gameObject.tag == "Floor")
+	if (other.gameObject.tag == "Room")
 	{
 	    CurrentRoom = (other.gameObject.name);
 	    Debug.Log(CurrentRoom);
