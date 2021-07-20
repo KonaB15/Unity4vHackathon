@@ -17,14 +17,15 @@ public class PlayerTracker : MonoBehaviour
     {
    
     }
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {	
          //Checks which room is being collided with and saves the name
-	if (collision.gameObject.tag == "Floor")
+	if (other.gameObject.tag == "Floor")
 	{
-	    CurrentRoom = (collision.gameObject.name);
+	    CurrentRoom = (other.gameObject.name);
 	    Debug.Log(CurrentRoom);
 	}
+
     }
    
 }
