@@ -5,8 +5,7 @@ using UnityEngine;
 public class JumpScript : MonoBehaviour
 {
 
-    float forceCount = 0f;
-    bool jumpingUp;
+ 
    
     // Start is called before the first frame update
     void Start()
