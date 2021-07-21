@@ -9,6 +9,7 @@ public class puzzle1Script : MonoBehaviour
     public int speed = 20;
     public Text winScreen;
     public GameManager manageScript;
+    public bool complete = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -69,6 +70,7 @@ public class puzzle1Script : MonoBehaviour
         if (collision.gameObject.CompareTag("prize"))
         {
             winScreen.text = "Very good for a first run.";
+            complete = true;
         }
     }
 

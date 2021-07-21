@@ -8,6 +8,7 @@ public class puzzle2Script : MonoBehaviour
     public InputField input;
     public Text winScreen;
     public GameManager manageScript;
+    public bool complete = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class puzzle2Script : MonoBehaviour
         {
             winScreen.color = Color.green;
             winScreen.text = "Very good. You're a smart one.";
+            complete = true;
         }
         else if (input.text != null && input.text != "")
         {

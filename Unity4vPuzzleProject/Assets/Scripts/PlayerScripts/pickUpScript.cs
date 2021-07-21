@@ -6,6 +6,9 @@ public class pickUpScript : MonoBehaviour
 {
 
     float range = 50f;
+
+
+    public Camera mainCamera;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,19 +18,28 @@ public class pickUpScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //make raycast hit
         RaycastHit hit;
-        Ray newRay = new Ray(transform.position, Vector3.down);
 
-        //hold 'f' to pick up object in crosshair
+
+        //press f to open door
        
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (Physics.Raycast(newRay, out hit, range))
+            //shoot ray
+            if (Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hit, range))
             {
+                //if the ray hits something
                 if (hit.transform.gameObject != null)
+
                 {
-                    Debug.Log(hit.collider.tag);
+
+                    //is it a door?
+                    if (hit.transform.gameObject.CompareTag("Door"))
+                    {
+                        //if yes, then set it active for now
+                        hit.transform.gameObject.SetActive(false);
+                    }
                 }
 
             
@@ -36,10 +48,6 @@ public class pickUpScript : MonoBehaviour
             }
         }
 
-        //let go of 'f' to drop
-        if (Input.GetKeyUp(KeyCode.F))
-        {
-            //dropping object
-        }
+       
     }
 }
