@@ -8,12 +8,12 @@ public class puzzle1Script : MonoBehaviour
 
     public int speed = 20;
     public Text winScreen;
-    public Button BackButton;
     public GameManager manageScript;
+    public bool complete = false;
     // Start is called before the first frame update
     void Start()
     {
-        BackButton.gameObject.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -69,8 +69,8 @@ public class puzzle1Script : MonoBehaviour
 
         if (collision.gameObject.CompareTag("prize"))
         {
-            winScreen.text = "Maze Completed!";
-            BackButton.gameObject.SetActive(true);
+            winScreen.text = "Very good for a first run.";
+            complete = true;
         }
     }
 

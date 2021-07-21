@@ -9,6 +9,7 @@ TagManager:
   - Floor
   - 'Collideable '
   - Room
+  - Door
   layers:
   - Default
   - TransparentFX
