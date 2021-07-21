@@ -19,6 +19,7 @@ public class BacktoMenuButton : MonoBehaviour
 
     public void BackToMenu()
     {
+        SendMessage("Puzzle1Completed");
         SceneManager.LoadScene("PlayerTest", LoadSceneMode.Single);
     }
 }
