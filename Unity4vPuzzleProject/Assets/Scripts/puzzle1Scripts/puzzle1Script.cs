@@ -10,6 +10,7 @@ public class puzzle1Script : MonoBehaviour
     public Text winScreen;
     public Button BackButton;
     public GameManager manageScript;
+    public bool complete = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -71,6 +72,8 @@ public class puzzle1Script : MonoBehaviour
         {
             winScreen.text = "Maze Completed!";
             BackButton.gameObject.SetActive(true);
+            complete = true;
+
         }
     }
 
