@@ -4,19 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Puzzlemenubuttons : MonoBehaviour
 {
-    public Canvas crosshair;
-    public Canvas puzzlemenu;
-    public Canvas puzzle2;
-    public Canvas puzzle3;
-
-    public 
     // Start is called before the first frame update
     void Start()
     {
-        puzzle2.gameObject.SetActive(false);
-        puzzle3.gameObject.SetActive(false);
-        puzzlemenu.gameObject.SetActive(false);
-        crosshair.gameObject.SetActive(true);
+        
     }
 
     // Update is called once per frame
@@ -31,25 +22,15 @@ public class Puzzlemenubuttons : MonoBehaviour
     }
     public void puzzleTwo()
     {
-        puzzle2.gameObject.SetActive(true);
-        puzzle3.gameObject.SetActive(false);
-        puzzlemenu.gameObject.SetActive(false);
-        crosshair.gameObject.SetActive(false);
+        SceneManager.LoadScene("puzzle2", LoadSceneMode.Single);
     }
     public void puzzleThree()
     {
-        puzzle2.gameObject.SetActive(false);
-        puzzle3.gameObject.SetActive(true);
-        puzzlemenu.gameObject.SetActive(false);
-        crosshair.gameObject.SetActive(false);
+        SceneManager.LoadScene("puzzle3", LoadSceneMode.Single);
     }
 
     public void ExitDesktop()
     {
         SceneManager.LoadScene("PlayerTest", LoadSceneMode.Single);
-        puzzle2.gameObject.SetActive(false);
-        puzzle3.gameObject.SetActive(false);
-        puzzlemenu.gameObject.SetActive(false);
-        crosshair.gameObject.SetActive(true);
     }
 }
