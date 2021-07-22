@@ -15,10 +15,12 @@ public class puzzle2Script : MonoBehaviour
     public Canvas puzzle2;
     public Canvas puzzle3;
 
+    public Button Puzzle3button;
+
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.Find("PuzzleMenu").GetComponent<PuzzleMenuConfig>().puzzle3shown = false;
+        
         BacktoMenu.gameObject.SetActive(false);
     }
 
@@ -47,7 +49,7 @@ public class puzzle2Script : MonoBehaviour
     public void BackToHousePuzzleTwo()
     {
         //go back to house and show puzzle 3 button
-        GameObject.Find("PuzzleMenu").GetComponent<PuzzleMenuConfig>().puzzle3shown = true;
+        Puzzle3button.gameObject.SetActive(true);
         crosshair.gameObject.SetActive(true);
         puzzle2.gameObject.SetActive(false);
         puzzle3.gameObject.SetActive(false);

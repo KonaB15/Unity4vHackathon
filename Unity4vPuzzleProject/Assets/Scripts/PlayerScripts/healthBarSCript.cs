@@ -23,7 +23,7 @@ public class healthBarSCript : MonoBehaviour
        
         frames++;
 
-        if (frames % 400 == 0)
+        if (frames % 4000 == 0)
         {
             health--;
         }

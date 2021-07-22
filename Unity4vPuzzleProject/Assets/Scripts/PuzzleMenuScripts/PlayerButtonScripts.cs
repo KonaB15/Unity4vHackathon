@@ -9,6 +9,9 @@ public class PlayerButtonScripts : MonoBehaviour
     public Canvas puzzlemenu;
     public Canvas puzzle2;
     public Canvas puzzle3;
+
+    public GameObject player;
+    public GameObject table;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +24,7 @@ public class PlayerButtonScripts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Desktop();
-        }
+        
     }
 
     public void Desktop()
