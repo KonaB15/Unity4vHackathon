@@ -19,7 +19,7 @@
 * A
 * S
 * D
-* Left Click
+* E(PickUp)
 
 ## Items
 * Computers
