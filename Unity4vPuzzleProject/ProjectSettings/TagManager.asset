@@ -13,6 +13,7 @@ TagManager:
   - stairsDoor
   - officeDoor
   - masterDoor
+  - can
   layers:
   - Default
   - TransparentFX

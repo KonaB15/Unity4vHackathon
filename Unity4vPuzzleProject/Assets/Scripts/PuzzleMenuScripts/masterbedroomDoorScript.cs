@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class masterbedroomDoorScript : MonoBehaviour
 {
+
+    public puzzle3Script puzzlethree;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,13 +15,11 @@ public class masterbedroomDoorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (puzzlethree.complete == true)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
-    public void Puzzle3Complete()
-    {
-      
-        transform.gameObject.SetActive(false);
-       
-    }
+    
 }

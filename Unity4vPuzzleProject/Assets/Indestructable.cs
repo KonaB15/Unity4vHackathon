@@ -8,6 +8,8 @@ public class Indestructable : MonoBehaviour
 
     public static Indestructable instance = null;
 
+
+
     // For sake of example, assume -1 indicates first scene
     public int prevScene = 4;
     void Awake()
@@ -22,7 +24,11 @@ public class Indestructable : MonoBehaviour
             return;
         }
 
+
+
         DontDestroyOnLoad(this.gameObject);
+
+        
     }
     
 }

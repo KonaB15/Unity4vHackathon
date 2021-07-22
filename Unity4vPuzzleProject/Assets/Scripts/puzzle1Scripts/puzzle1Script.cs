@@ -10,7 +10,7 @@ public class puzzle1Script : MonoBehaviour
     public Text winScreen;
     public Button BackButton;
     public GameManager manageScript;
-    public bool complete = false;
+    public static bool complete = false;
     // Start is called before the first frame update
     void Start()
     {

@@ -6,6 +6,8 @@ public class pickUpScript : MonoBehaviour
 {
 
     float range = 50f;
+
+    public healthBarSCript healthbar;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,17 +19,22 @@ public class pickUpScript : MonoBehaviour
     {
 
         RaycastHit hit;
-        Ray newRay = new Ray(transform.position, Vector3.down);
+        Ray newRay = new Ray(transform.position,transform.forward);
 
         //hold 'f' to pick up object in crosshair
        
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (Physics.Raycast(newRay, out hit, range))
             {
                 if (hit.transform.gameObject != null)
                 {
-                    Debug.Log(hit.collider.tag);
+                    if (hit.transform.gameObject.CompareTag("can"))
+                    {
+                        
+                        hit.transform.gameObject.SetActive(false);
+                        healthbar.health = 100;
+                    }
                 }
 
             
