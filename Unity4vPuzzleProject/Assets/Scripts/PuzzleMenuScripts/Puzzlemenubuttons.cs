@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Puzzlemenubuttons : MonoBehaviour
 {
+
+    public Canvas crosshair;
+    public Canvas puzzlemenu;
+    public Canvas puzzle2;
+    public Canvas puzzle3;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,15 +27,25 @@ public class Puzzlemenubuttons : MonoBehaviour
     }
     public void puzzleTwo()
     {
-        SceneManager.LoadScene("puzzle2", LoadSceneMode.Single);
+        puzzle2.gameObject.SetActive(true);
+        puzzlemenu.gameObject.SetActive(false);
+        puzzle3.gameObject.SetActive(false);
+        crosshair.gameObject.SetActive(false);
     }
     public void puzzleThree()
     {
-        SceneManager.LoadScene("puzzle3", LoadSceneMode.Single);
+        puzzle2.gameObject.SetActive(false);
+        puzzlemenu.gameObject.SetActive(false);
+        puzzle3.gameObject.SetActive(true);
+        crosshair.gameObject.SetActive(false);
     }
 
     public void ExitDesktop()
     {
-        SceneManager.LoadScene("PlayerTest", LoadSceneMode.Single);
+        puzzle2.gameObject.SetActive(false);
+        puzzlemenu.gameObject.SetActive(false);
+        puzzle3.gameObject.SetActive(false);
+        crosshair.gameObject.SetActive(true);
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
