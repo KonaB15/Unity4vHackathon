@@ -11,6 +11,14 @@ public class SceneManagerUI : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void QuitGame()
+    {
+        Debug.Log("Closing Game");
+        Application.Quit();
+    }
+
+
+
     // Start is called before the first frame update
     void Start()
     {
