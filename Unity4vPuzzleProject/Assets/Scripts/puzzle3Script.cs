@@ -23,6 +23,7 @@ public class puzzle3Script : MonoBehaviour
             winScreen.color = Color.green;
             winScreen.text = "Correct. So you've made it this far.";
             complete = true;
+           
         }
         else
         {

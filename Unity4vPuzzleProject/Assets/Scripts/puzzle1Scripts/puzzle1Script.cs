@@ -70,9 +70,12 @@ public class puzzle1Script : MonoBehaviour
 
         if (collision.gameObject.CompareTag("prize"))
         {
-            winScreen.text = "Looks like you actually have a brain! You have officially finished level 1. I’ll let you roam around a bit more, but only downstairs. -Kle2";
+            winScreen.text = "Looks like you actually have a brain! You have officially finished level 1. I?ll let you roam around a bit more, but only downstairs. -Kle2";
+  
             BackButton.gameObject.SetActive(true);
             complete = true;
+        
+
 
         }
     }

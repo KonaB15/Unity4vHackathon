@@ -16,6 +16,11 @@ public class PuzzleMenuConfig : MonoBehaviour
     public bool puzzle3shown = false;
 
     private Indestructable ind;
+
+
+    public officeDoorScript officescript;
+    public stairsDoorScript stairsscript;
+    public masterbedroomDoorScript masterdoorscript;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,10 +37,12 @@ public class PuzzleMenuConfig : MonoBehaviour
         if (Indestructable.instance.prevScene == 4)
         {
             Puzzle2.gameObject.SetActive(true);
+            officescript.Puzzle1Complete();
         }
         if(puzzle3shown == true)
         {
             Puzzle3.gameObject.SetActive(true);
+            stairsscript.Puzzle2Complete();
         }
     }
 }

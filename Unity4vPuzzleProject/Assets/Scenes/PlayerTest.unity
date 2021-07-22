@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427135, b: 0.56452316, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2177,6 +2177,7 @@ GameObject:
   - component: {fileID: 644172419}
   - component: {fileID: 644172418}
   - component: {fileID: 644172417}
+  - component: {fileID: 644172421}
   m_Layer: 0
   m_Name: upstairsdoor
   m_TagString: stairsDoor
@@ -2254,12 +2255,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644172416}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -195, y: 21, z: 57}
-  m_LocalScale: {x: 5, y: 7, z: 1}
+  m_LocalPosition: {x: -162, y: 25, z: 36}
+  m_LocalScale: {x: 6.7650003, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &644172421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644172416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b329a0f290595424da89007516e3666f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &660942264
 GameObject:
   m_ObjectHideFlags: 0
@@ -3996,6 +4009,7 @@ GameObject:
   - component: {fileID: 1039229559}
   - component: {fileID: 1039229558}
   - component: {fileID: 1039229557}
+  - component: {fileID: 1039229561}
   m_Layer: 0
   m_Name: officeDoor
   m_TagString: officeDoor
@@ -4079,6 +4093,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1039229561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039229556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9fca568adb7749c99002a8f20571c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1041881993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5424,6 +5450,7 @@ GameObject:
   - component: {fileID: 1277445347}
   - component: {fileID: 1277445350}
   - component: {fileID: 1277445351}
+  - component: {fileID: 1277445352}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5522,6 +5549,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e340c9e99258346d6984421584493ff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1277445352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277445346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e63b5bd5758b514ea069cf9ba5c0d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameLevel: 0
+  digits: 0000000000000000000000000000000000000000
+  puzzle: 1
+  office: 0
+  stairs: 0
+  master: 0
 --- !u!1 &1279510771
 GameObject:
   m_ObjectHideFlags: 0
@@ -5956,6 +6001,9 @@ MonoBehaviour:
   Puzzle2: {fileID: 824402474}
   Puzzle3: {fileID: 216653728}
   puzzle3shown: 0
+  officescript: {fileID: 0}
+  stairsscript: {fileID: 0}
+  masterdoorscript: {fileID: 0}
 --- !u!114 &1329553954
 MonoBehaviour:
   m_ObjectHideFlags: 0

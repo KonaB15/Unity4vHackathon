@@ -29,9 +29,11 @@ public class puzzle2Script : MonoBehaviour
 
         {
             winScreen.color = Color.green;
-            winScreen.text = "Looks like you’ve finished 2 puzzles now! You're a bit better than I thought, unfortunately. A bit of the second floor has opened up. By the way, Don’t forget this hint that I’m about to give you, “Purple”! -Kle2";
+            winScreen.text = "Looks like you?ve finished 2 puzzles now! You're a bit better than I thought, unfortunately. A bit of the second floor has opened up. By the way, Don?t forget this hint that I?m about to give you, ?Purple?! -Kle2";
+     
             BacktoMenu.gameObject.SetActive(true);
             complete = true;
+
         }
         else if (input.text != null && input.text != "")
         {
