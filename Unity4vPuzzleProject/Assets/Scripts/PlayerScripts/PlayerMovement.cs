@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
 
-        if (Input.GetKeyDown(KeyCode.E) && Vector3.Distance(table.transform.position, player.transform.position) <= 14)
+        if (Input.GetKeyDown(KeyCode.E) && Vector3.Distance(table.transform.position, player.transform.position) <= 20)
         {
             Cursor.lockState = CursorLockMode.None;
             Desktop();
