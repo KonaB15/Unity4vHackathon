@@ -29,10 +29,12 @@
 * Clickable Items
 * Background Props
 
-## Next Step(What Couldn't Be Completed)
-* Skybox
-* Minor Rooms
-* Saving/Loading
-* Outside View
-* Greater Scope Item Pickup
-* 
+## Next Steps(What Couldn't Be Completed)
+* Skybox(Wanted for atmosphere and windows, was deemed to be useless and a pain for house design).
+* Minor Rooms(Wanted to make the house more realistic and lived in. Got removed because they were redundant and made the house building more taxing).
+* Saving/Loading(Wanted for gameplay purposes. Removed for lack of use and difficulty in programming).
+* Outside View (Wanted for atmosphere. Was deemed too difficult to implement and not particularly useful).
+* More Item Interaction (Wanted for atmosphere and gameplay. Removed because of lack of time and overcomplicating gameplay).
+* Second Person (Removed for lack of use).
+* Random Code Lock (Added for endgame puzzle and replayability. Removed due to simplification of the last puzzle leaving it redundant).
+* Different/More Levels/Puzzles(Infeasble due to time constraints).
