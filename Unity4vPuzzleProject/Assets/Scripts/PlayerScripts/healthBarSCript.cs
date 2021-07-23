@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class healthBarSCript : MonoBehaviour
 {
 
@@ -23,9 +24,14 @@ public class healthBarSCript : MonoBehaviour
        
         frames++;
 
-        if (frames % 4000 == 0)
+        if (frames % 5000 == 0)
         {
-            health--;
+            health -= 10;
+            if(health <= 0)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+            }
         }
 
         healthText.text = health.ToString();

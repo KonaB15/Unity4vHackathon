@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OpeningCutscene2.unity
     guid: 9261d198d44139946bfbcf9daaab0344
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 3f4b010130ae708458f24f905c125ce0
   m_configObjects: {}
