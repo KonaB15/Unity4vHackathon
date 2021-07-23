@@ -20,42 +20,42 @@ public class puzzle1Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && complete == false)
         {
             transform.Translate(Vector2.up * speed * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && complete == false)
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) && complete == false)
         {
             transform.Translate(Vector2.down * speed * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && complete == false)
         {
             transform.Translate(Vector2.right * speed * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) && complete == false)
         {
             transform.Translate(Vector2.up * speed * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) && complete == false)
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow) && complete == false)
         {
             transform.Translate(Vector2.down * speed * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) && complete == false)
         {
             transform.Translate(Vector2.right * speed * Time.deltaTime);
         }
@@ -70,7 +70,7 @@ public class puzzle1Script : MonoBehaviour
 
         if (collision.gameObject.CompareTag("prize"))
         {
-            winScreen.text = "Looks like you actually have a brain! You have officially finished level 1. I?ll let you roam around a bit more, but only downstairs. -Kle2";
+            winScreen.text = "Looks like you actually have a brain! You have officially finished level 1. I'll let you roam around a bit more, but only downstairs. -Kle2";
   
             BackButton.gameObject.SetActive(true);
             complete = true;
