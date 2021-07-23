@@ -36,6 +36,7 @@ public class pickUpScript : MonoBehaviour
 
                         sodaCanSound.Play();
                         hit.transform.gameObject.SetActive(false);
+                        healthbar.health = 100;
                        
                     }
                 }
