@@ -34,6 +34,6 @@ public class healthBarSCript : MonoBehaviour
             }
         }
 
-        healthText.text = health.ToString();
+        healthText.text = "Health: " + health.ToString();
     }
 }

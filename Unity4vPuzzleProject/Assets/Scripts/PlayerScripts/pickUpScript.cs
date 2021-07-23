@@ -8,6 +8,8 @@ public class pickUpScript : MonoBehaviour
     float range = 50f;
 
     public healthBarSCript healthbar;
+
+    public AudioSource sodaCanSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,13 +33,14 @@ public class pickUpScript : MonoBehaviour
                 {
                     if (hit.transform.gameObject.CompareTag("can"))
                     {
-                        
+
+                        sodaCanSound.Play();
                         hit.transform.gameObject.SetActive(false);
-                        healthbar.health = 100;
+                       
                     }
                 }
 
-            
+                
             
                
             }
@@ -49,4 +52,7 @@ public class pickUpScript : MonoBehaviour
             //dropping object
         }
     }
+
+  
+
 }

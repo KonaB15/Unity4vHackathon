@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerTracker : MonoBehaviour
 {
     public string CurrentRoom;
+
+    public Text roomDisplay;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +17,7 @@ public class PlayerTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-   
+        roomDisplay.text = "Current Room: " + CurrentRoom;
     }
     void OnTriggerEnter(Collider other)
     {	
@@ -24,6 +26,7 @@ public class PlayerTracker : MonoBehaviour
 	{
 	    CurrentRoom = (other.gameObject.name);
 	    Debug.Log(CurrentRoom);
+         
 	}
 
     }
